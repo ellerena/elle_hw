@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -12068,8 +12068,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="BC2" library="pinhead2" deviceset="PINHD-1X10" device="" value="Header"/>
 <part name="ESP01_3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2" value="ESP01"/>
 <part name="JE1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2" value="ESP01"/>
-<part name="WROVER" library="pinhead2" deviceset="PINHD-1X4" device="" value="Header"/>
-<part name="LOLIN" library="pinhead2" deviceset="PINHD-1X4" device="" value="Header"/>
+<part name="WRO" library="pinhead2" deviceset="PINHD-1X4" device="" value="Header"/>
+<part name="LO" library="pinhead2" deviceset="PINHD-1X4" device="" value="Header"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="10k"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="10k"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="100n"/>
@@ -12172,11 +12172,11 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <attribute name="NAME" x="166.37" y="193.675" size="1.778" layer="95"/>
 <attribute name="VALUE" x="166.37" y="175.26" size="1.778" layer="96"/>
 </instance>
-<instance part="WROVER" gate="A" x="205.74" y="185.42" smashed="yes">
+<instance part="WRO" gate="A" x="205.74" y="185.42" smashed="yes">
 <attribute name="NAME" x="199.39" y="193.675" size="1.778" layer="95"/>
 <attribute name="VALUE" x="199.39" y="177.8" size="1.778" layer="96"/>
 </instance>
-<instance part="LOLIN" gate="A" x="152.4" y="185.42" smashed="yes" rot="MR0">
+<instance part="LO" gate="A" x="152.4" y="185.42" smashed="yes" rot="MR0">
 <attribute name="NAME" x="151.13" y="193.675" size="1.778" layer="95"/>
 <attribute name="VALUE" x="158.75" y="177.8" size="1.778" layer="96"/>
 </instance>
@@ -13039,14 +13039,14 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </net>
 <net name="01GND" class="0">
 <segment>
-<pinref part="WROVER" gate="A" pin="1"/>
+<pinref part="WRO" gate="A" pin="1"/>
 <label x="190.5" y="190.5" size="1.778" layer="95"/>
 <pinref part="JE1" gate="A" pin="1"/>
 <wire x1="190.5" y1="190.5" x2="203.2" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="190.5" x2="165.1" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="190.5" x2="165.1" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="198.12" x2="190.5" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="LOLIN" gate="A" pin="1"/>
+<pinref part="LO" gate="A" pin="1"/>
 <wire x1="154.94" y1="190.5" x2="165.1" y2="190.5" width="0.1524" layer="91"/>
 <junction x="165.1" y="190.5"/>
 <wire x1="190.5" y1="198.12" x2="165.1" y2="198.12" width="0.1524" layer="91"/>
@@ -13057,13 +13057,13 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </net>
 <net name="01TX" class="0">
 <segment>
-<pinref part="WROVER" gate="A" pin="2"/>
+<pinref part="WRO" gate="A" pin="2"/>
 <wire x1="203.2" y1="187.96" x2="187.96" y2="187.96" width="0.1524" layer="91"/>
 <label x="190.5" y="187.96" size="1.778" layer="95"/>
 <pinref part="JE1" gate="A" pin="2"/>
 <wire x1="177.8" y1="190.5" x2="187.96" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="190.5" x2="187.96" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="LOLIN" gate="A" pin="4"/>
+<pinref part="LO" gate="A" pin="4"/>
 <wire x1="154.94" y1="182.88" x2="154.94" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="172.72" x2="187.96" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="172.72" x2="187.96" y2="187.96" width="0.1524" layer="91"/>
@@ -13072,7 +13072,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </net>
 <net name="01RX" class="0">
 <segment>
-<pinref part="WROVER" gate="A" pin="3"/>
+<pinref part="WRO" gate="A" pin="3"/>
 <label x="190.5" y="185.42" size="1.778" layer="95"/>
 <pinref part="JE1" gate="A" pin="7"/>
 <wire x1="182.88" y1="185.42" x2="203.2" y2="185.42" width="0.1524" layer="91"/>
@@ -13080,7 +13080,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="165.1" y1="182.88" x2="165.1" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="177.8" x2="182.88" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="177.8" x2="182.88" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="LOLIN" gate="A" pin="3"/>
+<pinref part="LO" gate="A" pin="3"/>
 <wire x1="154.94" y1="185.42" x2="165.1" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="185.42" x2="165.1" y2="182.88" width="0.1524" layer="91"/>
 <junction x="165.1" y="182.88"/>
@@ -13090,7 +13090,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <segment>
 <label x="190.5" y="182.88" size="1.778" layer="95"/>
 <pinref part="JE1" gate="A" pin="8"/>
-<pinref part="LOLIN" gate="A" pin="2"/>
+<pinref part="LO" gate="A" pin="2"/>
 <wire x1="185.42" y1="182.88" x2="177.8" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="187.96" x2="162.56" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="187.96" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
@@ -13106,7 +13106,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="185.42" y1="175.26" x2="213.36" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="175.26" x2="213.36" y2="203.2" width="0.1524" layer="91"/>
 <junction x="185.42" y="175.26"/>
-<pinref part="WROVER" gate="A" pin="4"/>
+<pinref part="WRO" gate="A" pin="4"/>
 <wire x1="185.42" y1="182.88" x2="203.2" y2="182.88" width="0.1524" layer="91"/>
 <junction x="185.42" y="182.88"/>
 </segment>
