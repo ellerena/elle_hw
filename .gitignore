@@ -44,6 +44,7 @@ eagle.epf
 *.b#*
 
 *.info
+**/DESCRIPTION
 
 *.eps
 
