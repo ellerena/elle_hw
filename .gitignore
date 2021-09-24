@@ -55,3 +55,6 @@ eagle.epf
 *.zip
 *.scr
 
+**/library
+**/ulps
+
