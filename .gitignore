@@ -57,6 +57,7 @@ eagle.epf
 
 **/library
 **/ulps
+**/cam
 **/*nosvc*
 
 
