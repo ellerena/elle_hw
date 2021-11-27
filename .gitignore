@@ -35,6 +35,7 @@ eagle.epf
 *.gpi
 *.pls
 *.ger
+*.csv
 *.xln
 
 *.drd
